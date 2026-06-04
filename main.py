@@ -55,7 +55,6 @@ def _resource_path(relative: str) -> str:
 
 
 NODE_PATH = r"C:\Program Files\nodejs\node.exe"
-LOGO_PATH = _resource_path("logo.png")
 
 # Resilient download settings
 YDL_RESILIENCE = {
@@ -689,10 +688,6 @@ class MainWindow(QMainWindow):
         # Acrylic blur transparency
         self.setAttribute(Qt.WA_TranslucentBackground)
 
-        # Window icon
-        if os.path.exists(LOGO_PATH):
-            self.setWindowIcon(QIcon(LOGO_PATH))
-
         central = QWidget()
         central.setObjectName("centralBg")
         self.setCentralWidget(central)
@@ -1189,9 +1184,6 @@ def main():
     app = QApplication(sys.argv)
     app.setStyleSheet(STYLESHEET)
     app.setStyle("Fusion")
-
-    if os.path.exists(LOGO_PATH):
-        app.setWindowIcon(QIcon(LOGO_PATH))
 
     window = MainWindow()
     window.show()
