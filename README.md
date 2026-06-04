@@ -1,5 +1,7 @@
 # 3Go — YouTube Video & Playlist Downloader
 
+![3Go Logo](logo.png)
+
 Free desktop app to download YouTube videos and playlists.  
 Built with **PySide6** + **yt-dlp** + **ffmpeg**.
 
