@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+!3Go.spec
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Node (old frontend files, not needed for the Python app)
+node_modules/
+bun.lock
+bun.lockb
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+tsconfig.app.json
+tsconfig.node.json
+vite.config.ts
+vitest.config.ts
+eslint.config.js
+components.json
+index.html
+src/
+public/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Downloads
+downloads/
+NA/
+
+# Temp
+*.part
+*.ytdl
